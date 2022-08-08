@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background: black;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(0,0,255,0.6);
+  }
+
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 1vw;
+    box-shadow: inset 0 0 1vw transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: blue;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 146vh;
+    width: 100vw;
+    z-index: -100;
+    object-fit: cover;
+}
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    width: 90%;
+}
+nav {
+    z-index: 10;
+    width: 100%;
+}
+.logo {
+    cursor: pointer;
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+.navJD {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    padding: 15px;
+    display: inline-block;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: rgba(0,0,255,0.8);
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+button {
+    position: relative;
+    z-index: 10;
+    padding: 9px 25px;
+    background-color: rgba(0,0,255,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,0,255,0.8);
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.sekcja_newsletter {
+    height: 1100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.sekcja_newsletter h2 {
+    height: 50px;
+    color: blue;
+}
+select{
+    background: transparent;
+    color: #fff;
+}
+
+
+.markaSelect option{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modelSelect option{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.paliwoSelect option{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.RocznikOD option{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.RocznikDO option{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.CenaOD option{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.CenaDO option{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.PrzebiegOD option{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.PrzebiegDO option{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.Kolor option{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.BlockA {
+    float: left;
+}
+
+.BlockB {
+    float: right;
+}
+
+.BlockA label {
+    display: block;
+    font-size: 16px;
+    justify-content: start;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+.BlockB label {
+    display:inline-block;
+    font-size: 16px;
+    justify-content: start;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+.BlockA select{
+    width: 10vw;
+    outline: 0;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.BlockA input{
+    width: 10vw;
+    outline: 0;
+    padding: 5px;
+    background: transparent;
+}
+
+.BlockA textarea{
+    width: 10vw;
+    outline: 0;
+    padding: 5px;
+    background: transparent;
+    resize: none;
+}
+
+#imie-nazwisko, #Mail, #telefon, #message, #captcha{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.BlockB select{
+    width: 5vw;
+    outline: 0;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.Kolor select {
+    width: 10.2vw;
+}
+
+.btn {
+    top: 1vh;
+    left: 0vw;
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 10vw;
+    cursor: pointer;
+    display: block;
+}
+
+.btn:hover {
+    background-color: rgb(24, 204, 0);
+}
+
+#tekst , #bladtelefon{
+    border:solid 0px red; 
+    color:red;
+    margin-top:0px; 
+    line-height:22px;
+    font-size: 16px;
+}
+
+#weryfikacja {
+    bottom: 0px;
+    position: absolute;
+}
+
+#weryfikacja input {
+    background: transparent;
+    line-height: 22px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #fff;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    margin: 20px 0;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.socials li {
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: rgba(0,0,255,0.8);
+}
+.footer-bottom{
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 300;
+}
+

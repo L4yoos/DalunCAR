@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background: black;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(0,0,255,0.6);
+  }
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 1vw;
+    box-shadow: inset 0 0 1vw transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: blue;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 155vh;
+    width: 100vw;
+    z-index: -100;
+    object-fit: cover;
+}
+
+header{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    width: 90%;
+}
+nav {
+    z-index: 10;
+    width: 100%;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navJD {
+    display: inline-block;
+    padding: 1rem;
+    margin-left: 5px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: rgba(0,0,255,0.8);
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+button {
+    right: 0;
+    position: relative;
+    z-index: 10;
+    padding: 9px 25px;
+    background-color: rgba(0,0,255,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,0,255,0.8);
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.contact {
+    min-height: 150vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tekst {
+    min-height: 70vh;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group{
+    flex-basis: 48%;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    background: transparent;
+    font-size: 15px;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    background: transparent;
+    font-size: 15px;
+}
+#imie, #nazwisko, #email, #nrtele, #message{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.JD {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+.btn {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+#bladtelefon{
+    border:solid 0px red; 
+    color:red;
+    margin-top:0px; 
+    line-height:22px;
+    font-size: 16px;
+}
+
+input:focus~.JD,
+input:valid~.JD,
+textarea:focus~.JD,
+textarea:valid~.JD{
+    top: -35px;
+    font-size: 14px;
+}
+
+
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    margin: 20px 0;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.socials li {
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: rgba(0,0,255,0.8);
+}
+.footer-bottom{
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 300;
+}
+

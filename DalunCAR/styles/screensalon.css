@@ -1,0 +1,1363 @@
+
+@media (width: 2560px) and (height: 1440px)
+{
+    video {
+        height: 160vh;
+        width: 100vw;
+    }
+    .buttonmenu {
+        right: -950px;
+    }
+}
+@media (min-width: 1920px) and (max-height: 1080px)
+{
+    video {
+        height: 170vh;
+        width: 100vw;
+    }
+    .navJD {
+        display: inline-block;
+        padding: 3rem;
+        margin-left: 5px;
+    }
+    .buttonmenu {
+        right: -550px;
+    }
+}
+
+@media (min-width: 1440px) and (max-height: 900px) {
+    video {
+        height: 170vh;
+        width: 100vw;
+    }
+    .navJD {
+        display: inline-block;
+        padding: 3rem;
+        margin-left: 5px;
+    }
+    .buttonmenu {
+        right: -300px;
+    }
+}
+
+@media (min-width: 1280px) and (max-height: 800px) {
+    video {
+        height: 170vh;
+        width: 100vw;
+    }
+    .navJD {
+        display: inline-block;
+        padding: 3rem;
+        margin-left: 5px;
+    }
+    .buttonmenu {
+        right: -200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wybor-rodzaju .box a{
+        background: linear-gradient(-45deg,   #000, #f8b500, #870000,  #B06AB3, #0000ff, #190A05);
+        background-size: 400% 400%;
+        animation: gradient 25s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .wybor-rodzaju .box a{
+        background: linear-gradient(-45deg,    #f8b500, #870000,  #B06AB3, #0000ff, #190A05);
+        background-size: 400% 400%;
+    }
+}
+
+@media (width: 1024px) and (height: 768px){
+    video {
+        height: 170vh;
+        width: 100vw;
+    }
+    nav .logo {
+		float: none;
+		width: 5%;
+        height: 5%;
+		justify-content: center;
+	}
+	nav .nav__links {
+		float: none;
+        display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		flex-direction: column;
+        align-items: center;
+		justify-content: space-evenly;
+		background-color: rgb(0, 0, 125);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .nav__links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .nav__links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: -0px;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+        background-color: red;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+        background-color: red;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+}
+
+
+
+@media (max-width: 768px){
+    body{
+        background-image: url(../backgroundJD.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 182vh;
+    }
+    video{
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 55px;
+        right: -0px; 
+    }
+    .nav__links {
+        display: none;
+        width: 100%;
+    }
+
+	.nav__links a {
+		font-size: 20px;
+	}
+
+    .nav__links li {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__links ul li {
+        text-align: center;
+    }
+
+    .nav__links.active {
+        height: 90%;
+		float: none;
+        display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		flex-direction: column;
+        align-items: center;
+		gap: 110px;
+        background-color: rgb(0, 0, 125);
+        overflow: hidden;
+		box-sizing: border-box;
+    }
+    .nav__links.active:active {
+        transition: all .5s ease-in-out;
+    }
+    .bar {
+        transition: all .5s ease-in-out;
+    }
+    .activeBAR {
+        transition: all .5s ease-in-out;
+        transform: translateY(10px) rotate(225deg);
+    }
+    .activeBAR1 {
+        opacity: 0;
+    }
+    .activeBAR2 {
+        transition: all .5s ease-in-out;
+        transform: translateY(-8px) rotate(-225deg);
+    }
+    .menu {
+        position: fixed;
+        top: 55px; 
+        right: 40px;
+    }
+    .menu .activeBAR {
+        background-color: red;
+    }
+    .menu .activeBAR2 {
+        background-color: red;
+    }
+    .logojd {
+        position: fixed;
+        top: 20px;
+    }
+    .salonmenu {
+        display: none;
+    }
+    .footermenu {
+        display: none;
+    }
+    .buttonmenu {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) and (min-height:928px){
+    body{
+        background-image: url(../backgroundJD.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 182vh;
+    }
+    video{
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 55px;
+        right: -0px; 
+    }
+    .nav__links {
+        display: none;
+        width: 100%;
+    }
+
+	.nav__links a {
+		font-size: 20px;
+	}
+
+    .nav__links li {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__links ul li {
+        text-align: center;
+    }
+
+    .nav__links.active {
+        height: 90%;
+		float: none;
+        display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		flex-direction: column;
+        align-items: center;
+		gap: 190px;
+        background-color: rgb(0, 0, 125);
+        overflow: hidden;
+		box-sizing: border-box;
+    }
+    .nav__links.active:active {
+        transition: all .5s ease-in-out;
+    }
+    .bar {
+        transition: all .5s ease-in-out;
+    }
+    .activeBAR {
+        transition: all .5s ease-in-out;
+        transform: translateY(10px) rotate(225deg);
+    }
+    .activeBAR1 {
+        opacity: 0;
+    }
+    .activeBAR2 {
+        transition: all .5s ease-in-out;
+        transform: translateY(-8px) rotate(-225deg);
+    }
+    .menu {
+        position: fixed;
+        top: 55px; 
+        right: 75px;
+    }
+    .menu .activeBAR {
+        background-color: red;
+    }
+    .menu .activeBAR2 {
+        background-color: red;
+    }
+    .logojd {
+        position: fixed;
+        top: 20px;
+    }
+    .sekcjamenu {
+        display: none;
+    }
+    .footermenu {
+        display: none;
+    }
+    .buttonmenu {
+        right: 0;
+    }
+}
+
+@media (max-width: 734px) {
+    .nav__links.active {
+        flex-direction: row;
+        gap: 50px;
+    }
+    .menu {
+        right: 75px;
+    }
+}
+
+@media (min-width: 667px) and (max-height: 675px){
+    body{
+        background-image: url(../backgroundJD.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300vh;
+    }
+    video{
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 55px;
+        right: -0px; 
+    }
+    .nav__links {
+        display: none;
+        width: 100%;
+    }
+
+	.nav__links a {
+		font-size: 20px;
+	}
+
+    .nav__links li {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__links ul li {
+        text-align: center;
+    }
+
+    .nav__links.active {
+        height: 90%;
+		float: none;
+        display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		flex-direction: row;
+        align-items: center;
+		gap: 40px;
+        background-color: rgb(0, 0, 125);
+        overflow: hidden;
+		box-sizing: border-box;
+    }
+    .nav__links.active:active {
+        transition: all .5s ease-in-out;
+    }
+    .bar {
+        transition: all .5s ease-in-out;
+    }
+    .activeBAR {
+        transition: all .5s ease-in-out;
+        transform: translateY(10px) rotate(225deg);
+    }
+    .activeBAR1 {
+        opacity: 0;
+    }
+    .activeBAR2 {
+        transition: all .5s ease-in-out;
+        transform: translateY(-8px) rotate(-225deg);
+    }
+    .menu {
+        position: fixed;
+        top: 55px; 
+        right: 70px;
+    }
+    .menu .activeBAR {
+        background-color: red;
+    }
+    .menu .activeBAR2 {
+        background-color: red;
+    }
+    .logojd {
+        position: fixed;
+        top: 20px;
+    }
+    .salonmenu {
+        display: none;
+    }
+    .footermenu {
+        display: none;
+    }
+    .buttonmenu {
+        right: 0;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 150vh;
+    }
+    .wybor-rodzaju {
+        max-height: 10vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -750px;
+    }
+}
+
+
+
+@media (min-width: 667px) and (max-height: 311px){
+    body{
+        background-image: url(../backgroundJD.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 345vh;
+    }
+    video{
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 55px;
+        right: -0px; 
+    }
+    .nav__links {
+        display: none;
+        width: 100%;
+    }
+
+	.nav__links a {
+		font-size: 20px;
+	}
+
+    .nav__links li {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__links ul li {
+        text-align: center;
+    }
+
+    .nav__links.active {
+        height: 90%;
+		float: none;
+        display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		flex-direction: row;
+        align-items: center;
+		gap: 30px;
+        background-color: rgb(0, 0, 125);
+        overflow: hidden;
+		box-sizing: border-box;
+    }
+    .nav__links.active:active {
+        transition: all .5s ease-in-out;
+    }
+    .bar {
+        transition: all .5s ease-in-out;
+    }
+    .activeBAR {
+        transition: all .5s ease-in-out;
+        transform: translateY(10px) rotate(225deg);
+    }
+    .activeBAR1 {
+        opacity: 0;
+    }
+    .activeBAR2 {
+        transition: all .5s ease-in-out;
+        transform: translateY(-8px) rotate(-225deg);
+    }
+    .menu {
+        position: fixed;
+        top: 55px; 
+        right: 65px;
+    }
+    .menu .activeBAR {
+        background-color: red;
+    }
+    .menu .activeBAR2 {
+        background-color: red;
+    }
+    .logojd {
+        position: fixed;
+        top: 20px;
+    }
+    .salonmenu {
+        display: none;
+    }
+    .footermenu {
+        display: none;
+    }
+    .buttonmenu {
+        right: 0;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 150vh;
+    }
+    .wybor-rodzaju {
+        max-height: 10vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -750px;
+    }
+}
+
+@media (min-width: 736px) and (max-height: 350px){
+    body{
+        background-image: url(../backgroundJD.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 320vh;
+    }
+    video{
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 55px;
+        right: -0px; 
+    }
+    .nav__links {
+        display: none;
+        width: 100%;
+    }
+
+	.nav__links a {
+		font-size: 20px;
+	}
+
+    .nav__links li {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__links ul li {
+        text-align: center;
+    }
+
+    .nav__links.active {
+        height: 90%;
+		float: none;
+        display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		flex-direction: row;
+        align-items: center;
+		gap: 0;
+        background-color: rgb(0, 0, 125);
+        overflow: hidden;
+		box-sizing: border-box;
+    }
+    .nav__links.active:active {
+        transition: all .5s ease-in-out;
+    }
+    .bar {
+        transition: all .5s ease-in-out;
+    }
+    .activeBAR {
+        transition: all .5s ease-in-out;
+        transform: translateY(10px) rotate(225deg);
+    }
+    .activeBAR1 {
+        opacity: 0;
+    }
+    .activeBAR2 {
+        transition: all .5s ease-in-out;
+        transform: translateY(-8px) rotate(-225deg);
+    }
+    .menu {
+        position: fixed;
+        top: 55px; 
+        right: 65px;
+    }
+    .menu .activeBAR {
+        background-color: red;
+    }
+    .menu .activeBAR2 {
+        background-color: red;
+    }
+    .logojd {
+        position: fixed;
+        top: 20px;
+    }
+    .salonmenu {
+        display: none;
+    }
+    .footermenu {
+        display: none;
+    }
+    .buttonmenu {
+        right: 0;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 150vh;
+    }
+    .wybor-rodzaju {
+        max-height: 10vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -750px;
+    }
+}
+
+
+
+@media (width: 1024px) and (max-height: 675px){
+    body{
+        background-image: url(../backgroundJD.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 215vh;
+    }
+    video{
+        display: none;
+    }
+    nav .logo {
+		float: none;
+		width: 5%;
+        height: 5%;
+		justify-content: center;
+	}
+	nav .nav__links {
+		float: none;
+        display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+        flex-direction: row;
+        align-items: center;
+		justify-content: space-evenly;
+		background-color: rgb(0, 0, 125);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+    .nav__links li {
+        height: auto;
+        width: auto;
+        padding: 15px;
+    }
+    .nav__links .buttonmenu{
+        height: auto;
+        width: auto;
+        padding: 15px;
+    }
+	nav .nav__links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .nav__links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: -0px;
+	}
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 150vh;
+    }
+    .wybor-rodzaju {
+        max-height: 10vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -750px;
+    }
+}
+
+@media (max-width: 428px){
+    body {
+        height: 275vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 30vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1260px;
+    }
+}
+
+@media (max-width: 428px) and (height: 926px){
+    body {
+        height: 240vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 30vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1290px;
+    }
+}
+
+@media (max-width: 414px){
+    body {
+        height: 293vh;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 55px;
+        right: -0px; 
+    }
+    .nav__links {
+        display: none;
+        width: 100%;
+    }
+
+	.nav__links a {
+		font-size: 20px;
+	}
+
+    .nav__links li {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__links ul li {
+        text-align: center;
+    }
+
+    .nav__links.active {
+        height: 90%;
+		float: none;
+        display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		flex-direction: column;
+        align-items: center;
+		gap: 105px;
+        background-color: rgb(0, 0, 125);
+        overflow: hidden;
+		box-sizing: border-box;
+    }
+    .nav__links.active:active {
+        transition: all .5s ease-in-out;
+    }
+    .bar {
+        transition: all .5s ease-in-out;
+    }
+    .activeBAR {
+        transition: all .5s ease-in-out;
+        transform: translateY(10px) rotate(225deg);
+    }
+    .activeBAR1 {
+        opacity: 0;
+    }
+    .activeBAR2 {
+        transition: all .5s ease-in-out;
+        transform: translateY(-8px) rotate(-225deg);
+    }
+    .menu {
+        position: fixed;
+        top: 55px; 
+        right: 40px;
+    }
+    .menu .activeBAR {
+        background-color: red;
+    }
+    .menu .activeBAR2 {
+        background-color: red;
+    }
+    .logojd {
+        position: fixed;
+        top: 20px;
+    }
+    .salonmenu {
+        display: none;
+    }
+    .footermenu {
+        display: none;
+    }
+    .buttonmenu {
+        right: 0;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 25vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1270px;
+    }
+}
+
+@media (max-width: 414px) and (height: 896px){
+    body {
+        height: 242vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 30vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1270px;
+    }
+}
+
+@media (max-width: 414px) and (height: 736px){
+    body {
+        height: 275vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 30vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1280px;
+    }
+}
+
+@media (max-width: 390px){
+    body {
+        height: 275vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 30vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1350px;
+    }
+}
+
+@media (max-width: 390px) and (height: 844px){
+    body {
+        height: 275vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 30vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1470px;
+    }
+}
+
+@media (max-width: 385px){
+    body {
+        height: 235vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 30vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1150px;
+    }
+}
+
+@media (max-width: 375px){
+    body {
+        height: 325vh;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 55px;
+        right: -0px; 
+    }
+    .nav__links {
+        display: none;
+        width: 100%;
+    }
+
+	.nav__links a {
+		font-size: 20px;
+	}
+
+    .nav__links li {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__links ul li {
+        text-align: center;
+    }
+
+    .nav__links.active {
+        height: 90%;
+		float: none;
+        display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		flex-direction: column;
+        align-items: center;
+		gap: 85px;
+        background-color: rgb(0, 0, 125);
+        overflow: hidden;
+		box-sizing: border-box;
+    }
+    .nav__links.active:active {
+        transition: all .5s ease-in-out;
+    }
+    .bar {
+        transition: all .5s ease-in-out;
+    }
+    .activeBAR {
+        transition: all .5s ease-in-out;
+        transform: translateY(10px) rotate(225deg);
+    }
+    .activeBAR1 {
+        opacity: 0;
+    }
+    .activeBAR2 {
+        transition: all .5s ease-in-out;
+        transform: translateY(-8px) rotate(-225deg);
+    }
+    .menu {
+        position: fixed;
+        top: 55px; 
+        right: 40px;
+    }
+    .menu .activeBAR {
+        background-color: red;
+    }
+    .menu .activeBAR2 {
+        background-color: red;
+    }
+    .logojd {
+        position: fixed;
+        top: 20px;
+    }
+    .salonmenu {
+        display: none;
+    }
+    .footermenu {
+        display: none;
+    }
+    .buttonmenu {
+        right: 0;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 10vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1350px;
+    }
+}
+
+@media (max-width: 375px) and (height: 812px)
+{
+    body {
+        height: 275vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 30vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1420px;
+    }
+}
+
+@media (max-width: 375px) and (height: 685px){
+    body {
+        height: 325vh;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 55px;
+        right: -0px; 
+    }
+    .nav__links {
+        display: none;
+        width: 100%;
+    }
+
+	.nav__links a {
+		font-size: 20px;
+	}
+
+    .nav__links li {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__links ul li {
+        text-align: center;
+    }
+
+    .nav__links.active {
+        height: 90%;
+		float: none;
+        display: flex;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		flex-direction: column;
+        align-items: center;
+		gap: 115px;
+        background-color: rgb(0, 0, 125);
+        overflow: hidden;
+		box-sizing: border-box;
+    }
+    .nav__links.active:active {
+        transition: all .5s ease-in-out;
+    }
+    .bar {
+        transition: all .5s ease-in-out;
+    }
+    .activeBAR {
+        transition: all .5s ease-in-out;
+        transform: translateY(10px) rotate(225deg);
+    }
+    .activeBAR1 {
+        opacity: 0;
+    }
+    .activeBAR2 {
+        transition: all .5s ease-in-out;
+        transform: translateY(-8px) rotate(-225deg);
+    }
+    .menu {
+        position: fixed;
+        top: 55px; 
+        right: 40px;
+    }
+    .menu .activeBAR {
+        background-color: red;
+    }
+    .menu .activeBAR2 {
+        background-color: red;
+    }
+    .logojd {
+        position: fixed;
+        top: 20px;
+    }
+    .salonmenu {
+        display: none;
+    }
+    .footermenu {
+        display: none;
+    }
+    .buttonmenu {
+        right: 0;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 10vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1350px;
+    }
+}
+
+@media (max-width: 375px) and (height: 667px)
+{
+    body {
+        height: 315vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 20vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1420px;
+    }
+}
+
+@media (max-width: 360px){
+    body {
+        height: 270vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 30vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1300px;
+    }
+}
+
+@media (max-width: 320px){
+    body {
+        height: 200vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 130vh;
+    }
+    .wybor-rodzaju {
+        max-height: 40vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1050px;
+    }
+}
+
+@media (max-width: 320px) and (max-height: 568px){
+    body {
+        height: 350vh;
+    }
+    .heading h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+    }
+    .salon {
+        min-height: 140vh;
+    }
+    .wybor-rodzaju {
+        max-height: 2.5vh;
+    }
+    .wybor-rodzaju .box {
+        height: 150px;
+    }
+    footer {
+        bottom: -1420px;
+    }
+}
